@@ -53,12 +53,19 @@ This project allows you to securely fetch and display Gmail messages using the G
 
 4. Workflow
 
-	4.1 Get OAuth2 Token
+
+        4.1 Running the Project Locally (via Terminal)
+
+	cd path/to/your/project
+	php -S localhost:8000
+
+
+	4.2 Get OAuth2 Token
 
 	http://localhost:8000/get-token.php
 	You'll be redirected to Google's consent screen. After allowing access, Google will redirect back to your oauth2callback.php and display your access/refresh token.
 
-	4.2  Store the Refresh Token
+	4.3  Store the Refresh Token
 
 	Copy the "refresh_token" from the output and paste it into your .env file:
 
@@ -74,7 +81,7 @@ This project allows you to securely fetch and display Gmail messages using the G
 	GOOGLE_REFRESH_TOKEN=your-refresh-token-here
 
 
-	4.3 Fetch Gmail Messages
+	4.4 Fetch Gmail Messages
 
 	http://localhost:8000/fetch-emails.php
 
@@ -116,22 +123,7 @@ This project allows you to securely fetch and display Gmail messages using the G
 	?>
 
 
-8.Running the Project Locally (via Terminal)
 
-	8.1:
-		 cd path/to/your/project
-
-	8.2
-		php -S localhost:8000
-
-	8.3
-		http://localhost:8000/get-token.php
-
-	 (save the refresh token in .env file)
-
-	8.4 
-
-		http://localhost:8000/fetch-emails.php
 
 
 
