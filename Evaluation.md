@@ -26,7 +26,7 @@ Developer: Akash P T
 
 | Test Case             | Description                     | Expected Result                 | Status        |
 | --------------------- | ------------------------------- | ------------------------------- | ------------- |
-| Code Clarity          | Well-structured, commented code | Easy to read/extend             | ☐ Passed |
+| Code Clarity          | Well-structured, commented code | Easy to read/extend             |  Passed |
 | Reusability           | Token & email logic separable   | Can be imported into other apps | Passed |
 | Dependency Management | Composer used for libraries     | `vendor` folder auto-generated  | Passed |
 
