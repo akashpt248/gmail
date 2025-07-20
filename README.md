@@ -54,10 +54,10 @@ This project allows you to securely fetch and display Gmail messages using the G
 4. Workflow
 
 
-        4.1 Running the Project Locally (via Terminal)
-
-	cd path/to/your/project
-	php -S localhost:8000
+   4.1 Running the Project Locally (via Terminal)
+	
+		cd path/to/your/project
+		php -S localhost:8000
 
 
 	4.2 Get OAuth2 Token
@@ -69,16 +69,16 @@ This project allows you to securely fetch and display Gmail messages using the G
 
 	Copy the "refresh_token" from the output and paste it into your .env file:
 
-	   In Test Mode: The refresh_token will expire after 7 days unless the test user logs in again.	 Only 100 test users are allowed to use the OAuth app.
-	   Each new login from the same user may issue a new refresh token and invalidate the previous one if not handled properly.
-
-	   In Production Mode (after app is published):
-	   The refresh_token will not expire unless:
-	   The user manually revokes access.
-	   You change the scopes or reset credentials.
-	   You exceed token limits.
-
-	GOOGLE_REFRESH_TOKEN=your-refresh-token-here
+In Test Mode: The refresh_token will expire after 7 days unless the test user logs in again.	 Only 100 test users are allowed to use the OAuth app.
+Each new login from the same user may issue a new refresh token and invalidate the previous one if not handled properly.
+	
+In Production Mode (after app is published):
+The refresh_token will not expire unless:
+The user manually revokes access.
+You change the scopes or reset credentials.
+You exceed token limits.
+	
+		GOOGLE_REFRESH_TOKEN=your-refresh-token-here
 
 
 	4.4 Fetch Gmail Messages
